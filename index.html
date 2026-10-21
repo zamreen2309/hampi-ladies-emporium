@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A sample website concept for Hampi Ladies Emporium & Gift Shopee in Warangal.">
+<title>Hampi Ladies Emporium & Gift Shopee | Sample Website</title>
+<style>
+:root{--wine:#7a263f;--rose:#f5dfe3;--cream:#fffaf5;--ink:#35272b;--muted:#75666a;--gold:#c49a68}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+.notice{background:#fff0c9;color:#5d441b;text-align:center;padding:9px 16px;font-size:13px;font-weight:700}
+header{position:sticky;top:0;background:#fffaf5ee;backdrop-filter:blur(10px);border-bottom:1px solid #eadde0;z-index:5}
+.nav{max-width:1120px;margin:auto;padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-family:Georgia,serif;color:var(--wine);font-size:21px;font-weight:bold;line-height:1.1}.brand small{display:block;font-family:Arial,sans-serif;font-size:10px;letter-spacing:2px;margin-top:5px;color:var(--muted)}
+nav{display:flex;gap:22px;align-items:center}nav a{color:var(--ink);text-decoration:none;font-size:14px}nav a:hover{color:var(--wine)}
+.btn{display:inline-block;background:var(--wine);color:white!important;padding:12px 18px;border-radius:5px;text-decoration:none;font-weight:bold;font-size:14px;border:0}
+.hero{background:linear-gradient(120deg,#fff0f0,#f7e5dc 55%,#f0d5da);overflow:hidden}
+.hero-inner{max-width:1120px;margin:auto;min-height:490px;padding:74px 22px;display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center}
+.eyebrow{color:var(--wine);font-size:12px;letter-spacing:2.5px;font-weight:bold;text-transform:uppercase}
+h1,h2{font-family:Georgia,'Times New Roman',serif;line-height:1.1}h1{font-size:clamp(42px,5.4vw,68px);margin:15px 0;color:#5e2035}h2{font-size:clamp(30px,4vw,42px);margin:8px 0 16px;color:#5e2035}
+.lead{font-size:18px;color:#645158;max-width:520px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn.secondary{background:transparent;color:var(--wine)!important;border:1px solid var(--wine)}
+.art{min-height:330px;border-radius:48% 48% 18px 18px;background:linear-gradient(145deg,#c77b8e,#f4c8c7 48%,#f6e5cf);display:flex;align-items:center;justify-content:center;position:relative;box-shadow:0 25px 60px #7a263f20}
+.art-card{background:#fffaf4;border:1px solid #fff;box-shadow:0 14px 30px #7a263f22;border-radius:16px;padding:26px;text-align:center;width:72%;transform:rotate(-4deg)}
+.art-card .emoji{font-size:62px;line-height:1.5}.art-card strong{display:block;font-family:Georgia,serif;color:var(--wine);font-size:24px}.art-card span{color:var(--muted);font-size:12px}
+section{padding:72px 22px}.wrap{max-width:1120px;margin:auto}.center{text-align:center}.sub{color:var(--muted);max-width:650px;margin:0 auto 34px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:white;border:1px solid #f0e2e4;border-radius:12px;overflow:hidden;box-shadow:0 8px 25px #51263808}.tile{height:155px;display:grid;place-items:center;background:linear-gradient(135deg,#f8e2e5,#fff0d9);font-size:52px}.card-body{padding:18px}.card h3{margin:0 0 6px;color:var(--wine);font-family:Georgia,serif;font-size:19px}.card p{margin:0;color:var(--muted);font-size:14px}
+.band{background:#f7e8e9}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin-top:32px}.feature{background:#fffaf5;padding:24px;border-radius:10px}.feature b{color:var(--wine);display:block;margin:8px 0}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.gallery div{min-height:160px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(135deg,#f6d9df,#fff0d8);font-size:48px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}.contact-box{background:white;border:1px solid #efdee2;border-radius:12px;padding:26px}.contact-box p{color:var(--muted)}
+footer{background:#4f1d30;color:#fff0f3;padding:30px 22px;text-align:center}footer p{margin:5px;font-size:13px;color:#f3dfe5}
+@media(max-width:800px){.hero-inner{grid-template-columns:1fr;padding-top:52px;gap:25px}.art{min-height:260px}.cards{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:1fr}.contact{grid-template-columns:1fr}nav{gap:12px}nav a:not(.btn){display:none}}
+@media(max-width:440px){.nav{padding:13px 15px}.brand{font-size:17px}.nav .btn{padding:9px 11px;font-size:12px}.hero-inner{padding:44px 18px}.cards{gap:11px}.card-body{padding:13px}section{padding:54px 18px}.gallery{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="notice">SAMPLE WEBSITE CONCEPT • Not the shop's official website</div>
+<header><div class="nav">
+  <div class="brand">Hampi Ladies Emporium<small>& GIFT SHOPEE · CONCEPT</small></div>
+  <nav><a href="#home">Home</a><a href="#products">Collections</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a><a class="btn" href="#contact">Enquire</a></nav>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="hero-inner">
+  <div><div class="eyebrow">Little joys, lovely finds</div><h1>Little Things.<br>Lovely Gifts.</h1><p class="lead">Discover beauty essentials, accessories and thoughtful gifts all in one place.</p><div class="hero-actions"><a class="btn" href="#products">Explore Collections</a><a class="btn secondary" href="#contact">Find the Shop</a></div></div>
+  <div class="art" aria-label="Decorative gift and beauty illustration"><div class="art-card"><div class="emoji">🎁 🌸 💄</div><strong>A little something special</strong><span>Beauty · Accessories · Gifts</span></div></div>
+</div></section>
+<section id="products"><div class="wrap center"><div class="eyebrow">Explore our range</div><h2>Something for every occasion</h2><p class="sub">A proposed collection layout for the shop. Categories should be confirmed with the owner before the site goes live.</p>
+<div class="cards">
+ <article class="card"><div class="tile">💄</div><div class="card-body"><h3>Cosmetics & Beauty</h3><p>Beauty essentials and everyday favourites.</p></div></article>
+ <article class="card"><div class="tile">🎀</div><div class="card-body"><h3>Fashion Accessories</h3><p>Small details to complement your style.</p></div></article>
+ <article class="card"><div class="tile">🎁</div><div class="card-body"><h3>Gifts & Surprises</h3><p>Thoughtful picks for special moments.</p></div></article>
+ <article class="card"><div class="tile">✨</div><div class="card-body"><h3>Everyday Essentials</h3><p>Useful little finds for your daily routine.</p></div></article>
+</div></div></section>
+<section class="band"><div class="wrap center"><div class="eyebrow">Your neighbourhood shopping stop</div><h2>A warm, welcoming experience</h2><p class="sub">This section can be personalised with real details from the shop owner.</p>
+<div class="features"><div class="feature"><span style="font-size:30px">🛍️</span><b>Explore a variety</b><span>Showcase the product categories available in-store.</span></div><div class="feature"><span style="font-size:30px">🎀</span><b>Find a thoughtful gift</b><span>Help visitors discover gift ideas for different occasions.</span></div><div class="feature"><span style="font-size:30px">📍</span><b>Shop locally</b><span>Add verified directions and opening hours for easy visits.</span></div></div>
+</div></section>
+<section id="gallery"><div class="wrap center"><div class="eyebrow">A glimpse of the collection</div><h2>Gallery</h2><p class="sub">Decorative placeholders for this concept. Replace with photos approved by the owner.</p><div class="gallery"><div>💐</div><div>🧴</div><div>🎁</div><div>💍</div><div>🎀</div><div>🌷</div></div></div></section>
+<section class="band" id="contact"><div class="wrap contact"><div><div class="eyebrow">Come say hello</div><h2>Visit or get in touch</h2><p>We'd love to help you discover the shop. Confirm the correct address, phone number and opening hours with the owner before publishing this section.</p></div><div class="contact-box"><h3 style="margin-top:0;color:#7a263f">Hampi Ladies Emporium & Gift Shopee</h3><p><b>Location:</b> Srinagar Colony, Warangal, Telangana <em>(please verify exact address)</em></p><p><b>Phone:</b> To be added after owner confirmation</p><p><b>Opening hours:</b> To be confirmed</p><p><b>Directions:</b> Add verified Google Maps link here</p><a class="btn secondary" href="#home">Back to top ↑</a></div></div></section>
+</main>
+<footer><strong>Hampi Ladies Emporium & Gift Shopee</strong><p>Sample concept created for demonstration. Not an official business website.</p><p>Product categories, business details and images require owner confirmation.</p></footer>
+</body></html>
